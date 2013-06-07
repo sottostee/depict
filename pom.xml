@@ -11,8 +11,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <chance.version>5.5.0-SNAPSHOT</chance.version>
-        <drools.version>5.5.0-SNAPSHOT</drools.version>
+        <chance.version>0.5.6.Final</chance.version>
+        <drools.version>5.6.0-SNAPSHOT</drools.version>
     </properties>
 
 

@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class DroolsKinectModel extends MapKinectModel implements KinectModel {
+public class DroolsKinectModel extends MapKinectModel implements KinectModel, DumpingBodyModel{
 
     private boolean cacheData;
 
@@ -68,7 +68,7 @@ public class DroolsKinectModel extends MapKinectModel implements KinectModel {
     public void setkSession( StatefulKnowledgeSession kSession ) {
         this.kSession = kSession;
 
-        kSession.setGlobal( "factory", new ObjectFactory() );
+       // kSession.setGlobal( "factory", new ObjectFactory() );
 
         userEP = kSession.getWorkingMemoryEntryPoint( "userEP" );
 

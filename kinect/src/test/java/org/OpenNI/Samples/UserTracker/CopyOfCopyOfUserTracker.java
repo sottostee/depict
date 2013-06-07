@@ -308,10 +308,10 @@ public class CopyOfCopyOfUserTracker extends Component {
 		private ButtonGroup group1;
 		//		private ExtensionFileFilter filter1;
 
-		private String path = "/home/ste/Scrivania/AI/depict/kinect";
+		private String path = "/home/ste/Scrivania/";
 
 		public UserDumperFrame(){
-
+			
 			this.panel = new JPanel();
 
 			this.setDefaultCloseOperation(this.DO_NOTHING_ON_CLOSE);
@@ -821,7 +821,7 @@ public class CopyOfCopyOfUserTracker extends Component {
 			transformer = transformerFactory.newTransformer();
 
 			source = new DOMSource(doc);
-			result = new StreamResult(new File("/home/ste/Scrivania/AI/depict/kinect/" + fileXML));
+			result = new StreamResult(new File(dumperFrame.path + fileXML));
 
 			transformer.transform(source, result);
 

@@ -45,10 +45,11 @@ public class KinectModelFactory {
         Chance.initialize();
 
         KnowledgeBuilder kBuilder = KnowledgeBuilderFactory.newKnowledgeBuilder(Chance.getChanceKBuilderConfiguration());
-        kBuilder.add( new ClassPathResource( "it/unibo/deis/lia/depict/activity_kbase.xml" ), ResourceType.CHANGE_SET );
-        if ( kBuilder.hasErrors() ) {
+        // kBuilder.add( new ClassPathResource( "it/unibo/deis/lia/depict/activity_kbase.xml" ), ResourceType.CHANGE_SET );
+        // kBuilder.add(new ClassPathResource("it/unibo/deis/lia/depict/dummy.drl"), ResourceType.DRL);
+        if ( kBuilder.hasErrors() )
             fail( kBuilder.getErrors().toString() );
-        }
+        
 
         KnowledgeBaseConfiguration kbConf = KnowledgeBaseFactory.newKnowledgeBaseConfiguration();
         kbConf.setOption( EventProcessingOption.STREAM );

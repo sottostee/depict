@@ -17,8 +17,8 @@ public class EventUserTracker extends AbstractUserTracker {
 
 
     //TODO: pick this up dynamically
-    private final String MODULES_XML = "/home/davide/Projects/Git/DEPICT/depict/kinect/src/main/resources/modules.xml";
-
+    private final String MODULES_XML = "/home/ste/Scrivania/AI/depict/kinect/src/main/resources/modules.xml";
+ 
 
 
 
@@ -80,6 +80,8 @@ public class EventUserTracker extends AbstractUserTracker {
 
 
     public void waitForNextSample() throws StatusException {
+    	if (context==null)
+    		System.out.println("context null");
         context.waitAndUpdateAll();
     }
 

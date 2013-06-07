@@ -23,7 +23,7 @@ public abstract class AbstractUserTracker {
         model.setCacheData( caching );
 
         if ( caching && modelType == KinectModelFactory.MODEL_TYPES.DROOLS ) {
-            ( (DroolsKinectModel) model).getkSession().setGlobal("view", frame.getEventPanel() );
+       //     ( (DroolsKinectModel) model).getkSession().setGlobal("view", frame.getEventPanel() );
         }
     }
 

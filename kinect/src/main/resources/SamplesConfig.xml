@@ -27,7 +27,7 @@
 				<Mirror on="true" />
 			</Configuration>
 		</Node>
-		<Node>User</Node>
+		<Node type="User" />
 	</ProductionNodes>
 </OpenNI>
 

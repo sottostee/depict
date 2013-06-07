@@ -1,6 +1,6 @@
-package http.it.unibo.deis.lia.depict;
+package it.unibo.deis.lia.depict;
 
-import http.it.unibo.deis.lia.depict.DroolsKinectModel.Coords;
+import it.unibo.deis.lia.depict.DroolsKinectModel.Coords;
 
 global ObjectFactory factory;
 

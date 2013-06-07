@@ -11,7 +11,14 @@ public class NewUserObserver implements IObserver<UserEventArgs> {
     private PoseDetectionCapability poseDetectionCap;
 
     public NewUserObserver( KinectModel model, SkeletonCapability skeletonCap, PoseDetectionCapability poseDetectionCap) {
-        this.model = model;
+        if(model==null)
+        	System.out.println("model null");
+    	if(skeletonCap==null)
+        	System.out.println("skeletonCap null");
+        if(poseDetectionCap==null)
+        	System.out.println("poseDetectionCap null");
+        
+    	this.model = model;
         this.skeletonCap = skeletonCap;
         this.poseDetectionCap = poseDetectionCap;
     }

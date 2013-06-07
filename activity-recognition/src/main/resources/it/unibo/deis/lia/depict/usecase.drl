@@ -1,8 +1,8 @@
 
-package http.it.unibo.deis.lia.depict;
+package it.unibo.deis.lia.depict;
 
 
-import http.it.unibo.deis.lia.depict.audio.Voice;
+import it.unibo.deis.lia.depict.audio.Voice;
 
 import org.drools.chance.factmodel.Imperfect;
 import org.drools.chance.factmodel.LinguisticPartition;

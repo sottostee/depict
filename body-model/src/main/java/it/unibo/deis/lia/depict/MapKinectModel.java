@@ -10,7 +10,7 @@ import java.util.*;
 public class MapKinectModel implements KinectModel {
 
     protected boolean cacheData;
-
+    
     private Set<Integer> knownUsers = new HashSet<Integer>( 3 );
     private Map<Integer, HashMap<SkeletonJoint, SkeletonJointPosition>> joints = Collections.synchronizedMap(
             new HashMap<Integer, HashMap<SkeletonJoint, SkeletonJointPosition>>( 3 )
